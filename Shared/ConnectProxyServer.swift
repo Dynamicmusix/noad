@@ -173,6 +173,12 @@ public final class ConnectProxyServer: @unchecked Sendable {
             if clientFD < 0 {
                 break
             }
+            // CRITICAL on Darwin/iOS: accept() inherits O_NONBLOCK from serverFD!
+            // Clear O_NONBLOCK so clientFD is a normal blocking socket.
+            let cFlags = fcntl(clientFD, F_GETFL, 0)
+            if cFlags >= 0 {
+                _ = fcntl(clientFD, F_SETFL, cFlags & ~O_NONBLOCK)
+            }
             var yes: Int32 = 1
             setsockopt(clientFD, SOL_SOCKET, SO_NOSIGPIPE, &yes, socklen_t(MemoryLayout<Int32>.size))
             workerQueue.async { [weak self] in
@@ -251,11 +257,17 @@ public final class ConnectProxyServer: @unchecked Sendable {
             }
         }
 
-        // Bidirectional TCP relay
+        // Bidirectional TCP relay — close both FDs only after BOTH directions complete!
+        let group = DispatchGroup()
+        group.enter()
         workerQueue.async {
             Self.pump(from: clientFD, to: upstreamFD)
+            group.leave()
         }
         Self.pump(from: upstreamFD, to: clientFD)
+        group.wait()
+        close(clientFD)
+        close(upstreamFD)
     }
 
     private func connectDirectPOSIX(host: String, port: UInt16) -> Int32 {
@@ -310,13 +322,18 @@ public final class ConnectProxyServer: @unchecked Sendable {
         var buf = [UInt8](repeating: 0, count: 32768)
         while true {
             let r = recv(srcFD, &buf, buf.count, 0)
-            if r <= 0 { break }
+            if r == 0 { break }
+            if r < 0 {
+                if errno == EINTR { continue }
+                break
+            }
             var sent = 0
             var failed = false
             while sent < r {
                 let w = buf.withUnsafeBufferPointer { ptr in
                     send(dstFD, ptr.baseAddress! + sent, r - sent, 0)
                 }
+                if w < 0 && errno == EINTR { continue }
                 if w <= 0 {
                     failed = true
                     break
@@ -326,7 +343,7 @@ public final class ConnectProxyServer: @unchecked Sendable {
             if failed { break }
         }
         shutdown(dstFD, SHUT_WR)
-        close(srcFD)
+        shutdown(srcFD, SHUT_RD)
     }
 
     // MARK: - Background Keep-Alive (Audio + Extended Background Task)
