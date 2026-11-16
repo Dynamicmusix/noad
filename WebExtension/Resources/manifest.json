@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "default_locale": "en",
+  "name": "NØAD",
+  "description": "NØAD blocks YouTube video ads, skips pre-roll/mid-roll ads, and hides cosmetic annoyances in Safari",
+  "version": "1.0.0",
+  "icons": {
+    "48": "images/ml-pro-we-icon-48.png",
+    "96": "images/ml-pro-we-icon-96.png",
+    "128": "images/ml-pro-we-icon-128.png",
+    "256": "images/ml-pro-we-icon-256.png",
+    "512": "images/ml-pro-we-icon-512.png"
+  },
+  "content_scripts": [
+    {
+      "js": ["js/inject-youtube.js"],
+      "css": ["css/inject-youtube.css"],
+      "matches": ["*://*.youtube.com/*"],
+      "all_frames": true,
+      "run_at": "document_start",
+      "world": "MAIN"
+    }
+  ],
+  "background": {
+    "service_worker": "js/background.js",
+    "scripts": ["js/background.js"],
+    "type": "module"
+  },
+  "permissions": ["nativeMessaging", "storage", "activeTab"]
+}

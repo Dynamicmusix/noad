@@ -1,0 +1,153 @@
+[
+ {
+    "trigger": {
+        "url-filter": "\\.youtube\\.com"
+    },
+    "action": {
+        "type": "css-display-none",
+        "selector": ".ytp-ad-overlay-slot"
+    }
+},
+ {
+    "trigger": {
+        "url-filter": "\\.youtube\\.com"
+    },
+    "action": {
+        "type": "css-display-none",
+        "selector": "ytd-app > ytd-popup-container #contentWrapper > yt-tooltip-renderer"
+    }
+},
+ {
+    "trigger": {
+        "url-filter": "\\.youtube\\.com"
+    },
+    "action": {
+        "type": "css-display-none",
+        "selector": "#masthead-ad"
+    }
+},
+ {
+    "trigger": {
+        "url-filter": "\\.youtube\\.com"
+    },
+    "action": {
+        "type": "css-display-none",
+        "selector": "ytd-compact-promoted-item-renderer"
+    }
+},
+ {
+    "trigger": {
+        "url-filter": "\\.youtube\\.com"
+    },
+    "action": {
+        "type": "css-display-none",
+        "selector": "#player-ads, ytm-companion-slot"
+    }
+},
+ {
+    "trigger": {
+        "url-filter": "\\.youtube\\.com"
+    },
+    "action": {
+        "type": "css-display-none",
+        "selector": "ytd-promoted-sparkles-web-renderer, ytm-promoted-sparkles-web-renderer"
+    }
+},
+ {
+    "trigger": {
+        "url-filter": "\\.youtube\\.com"
+    },
+    "action": {
+        "type": "css-display-none",
+        "selector": "ytd-promoted-sparkles-text-search-renderer, ytm-promoted-sparkles-text-search-renderer"
+    }
+},
+ {
+    "trigger": {
+        "url-filter": "\\.youtube\\.com"
+    },
+    "action": {
+        "type": "css-display-none",
+        "selector": "ytd-compact-promoted-video-renderer"
+    }
+},
+ {
+    "trigger": {
+        "url-filter": "\\.youtube\\.com"
+    },
+    "action": {
+        "type": "css-display-none",
+        "selector": "ytd-merch-shelf-renderer"
+    }
+},
+ {
+    "trigger": {
+        "url-filter": "\\.youtube\\.com"
+    },
+    "action": {
+        "type": "css-display-none",
+        "selector": "#offer-module"
+    }
+},
+ {
+  "trigger": {
+   "url-filter": "\\.youtube\\.com\\/get_midroll_"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "\\.youtube\\.com\\/get_video_info"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+    "trigger": {
+        "url-filter": "\\.youtube\\.com"
+    },
+    "action": {
+        "type": "css-display-none",
+        "selector": ".ytp-ad-action-interstitial-background, .ytp-ad-action-interstitial-card"
+    }
+},
+ {
+    "trigger": {
+        "url-filter": "\\.youtube\\.com"
+    },
+    "action": {
+        "type": "css-display-none",
+        "selector": "ytd-carousel-ad-renderer"
+    }
+},
+ {
+    "trigger": {
+        "url-filter": "\\.youtube\\.com"
+    },
+    "action": {
+        "type": "css-display-none",
+        "selector": "ytd-display-ad-renderer"
+    }
+},
+ {
+    "trigger": {
+        "url-filter": "\\.youtube\\.com"
+    },
+    "action": {
+        "type": "css-display-none",
+        "selector": "ytd-search-pyv-renderer"
+    }
+},
+ {
+    "trigger": {
+        "url-filter": "\\.youtube\\.com"
+    },
+    "action": {
+        "type": "css-display-none",
+        "selector": "ytd-ad-slot-renderer"
+    }
+}
+]

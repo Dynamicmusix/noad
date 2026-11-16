@@ -1,0 +1,2755 @@
+[
+ {
+  "trigger": {
+   "url-filter": ".*\\.lv/ads/.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*\\.lv/banners/.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*\\.lv/images/banners/.*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*\\.lv/img/banners/.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*/wp-content/srennab[^a-zA-Z0-9_\\-\\.%].*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*1188\\.lv[^a-zA-Z0-9_\\-\\.%].*/banners/.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*1a\\.lv/images/creamcredit.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*1w\\.lv/banner_.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*220\\.lv/rek_html/.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*2x2\\.lv/img/.*",
+   "resource-type": [
+    "other"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*admp-tc\\.delfi\\.lv[^a-zA-Z0-9_\\-\\.%].*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*atlaides\\.delfi\\.lv/export\\.php.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*back\\.jauns\\.lv/marketing-widget/.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*balticlivecam\\.com/images/acb_logo\\.png.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*banners\\.zl\\.lv[^a-zA-Z0-9_\\-\\.%].*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*bdaugava\\.lv/media/uploads/banners/.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*bigshop\\.lv/baners/.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*bilesuserviss\\.lv/upload/banner/.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*bm\\.lv/images/.*\\.swf.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*bm\\.lv[^a-zA-Z0-9_\\-\\.%].*_banner\\.swf.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*cdn\\.balticlivecam\\.com/flowplayer/ad_clean\\.css.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*cenuklubs\\.lv/assets/images/BANERI/.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*cenuklubs\\.lv/assets/media/.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*delfi\\.lv/ap/edu/g/.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*delfi\\.lv/d/h2011/pardotnet/.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*delfi\\.lv/d/infoblock/.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*delfi\\.lv/fp/i/city24.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*delfi\\.lv/jo/g/.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*delfi\\.lv/misc/xml_infoblocks/.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*delfi\\.lv/tr/g/.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*delfi\\.lv/ve/g/.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*delphi\\.lv/city24/.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*delphi\\.lv/news-blocks/external/inchlv.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*discover\\.lv/userfiles/promofotos/.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*e-pica\\.lv/mce/uploads/banners/.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*ecompics\\.power\\.oho\\.lv[^a-zA-Z0-9_\\-\\.%].*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*ehalle\\.lv/grupu_bildes/.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*elektroenergija\\.lv/img/atl.*.*",
+   "resource-type": [
+    "image"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*elittesport\\.lv/pictures/banneri_gar_malam/.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*elittesport\\.lv/pictures/Tirgoshanas/.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*eveselibaspunkts\\.lv/images/banners/.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*fotoreceptes\\.lv/banneris.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*fotoreceptes\\.lv/iespeja\\.GIF.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*gudriem\\.lv/App_Themes/Default/Banners/.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*gudrinieks\\.lv/res/banner/.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*gudrinieks\\.lv/res/js/sb_banner\\.js.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*hop\\.lv[^a-zA-Z0-9_\\-\\.%].*/banneri/.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*iaptieka\\.lv/atteli/apmaina/.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*img\\.pilseta24\\.lv/media/768x575[^a-zA-Z0-9_\\-\\.%].*",
+   "resource-type": [
+    "image"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*intim\\.lv/res/banners/.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*jauns\\.lv/ad_list/.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*jauns\\.lv/images/tele2/.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*kurpirkt\\.lv/ba/.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*kurpirkt\\.lv/img/ieskaties2\\.png.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*latauto\\.tvnet\\.lv/infoblock.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*leta\\.lv/img/.*/info_banneris_.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*leta\\.lv[^a-zA-Z0-9_\\-\\.%].*/preview_banner.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*lu\\.lv/uploads/tx_macinabanners/.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*lv\\.lv/bildes/reklaama\\.png.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*manstv\\.lv/js/bannerhandlerv2\\.js.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*miljons\\.com/bnr/.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*nekrize\\.lv/nkr300x250_.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*notepad\\.lv/adfoter2\\.png.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*notepad\\.lv/images/partneri/.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*notepad\\.lv/partneri/.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*nra\\.lv/_rekl/.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*nra\\.lv/spec/.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*oga\\.lv/ieBildes/.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*petits\\.lv/pics/banners/.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*player\\.tvnet\\.lv/o/.*\\.mp4.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*player\\.tvnet\\.lv[^a-zA-Z0-9_\\-\\.%].*/stats\\.json.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*pv2013\\.cvk\\.lv/lmt\\.jpg.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*r\\.inbox\\.lv[^a-zA-Z0-9_\\-\\.%].*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*receptes\\.lv/images/design/davana_tev\\.png.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*reklama\\.lv/images/picads/users/.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*reklama\\.lv/services/ads_count\\.html.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*riga\\.lv/MEDIA/Misc/.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*runabildes\\.lv/\\?acx_onclick.*",
+   "resource-type": [
+    "popup"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*runabildes\\.lv[^a-zA-Z0-9_\\-\\.%].*/itro-popup/.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*runabildes\\.lv[^a-zA-Z0-9_\\-\\.%].*/ondo_tapete\\.jpg.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*runabildes\\.lv[^a-zA-Z0-9_\\-\\.%].*/wpsite-background-takeover/.*",
+   "resource-type": [
+    "script"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*salidzini\\.lv/.*_1200x150.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*salidzini\\.lv/.*_190x600.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*salidzini\\.lv/.*_320x120.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*semicom\\.lv/admin/files/.*",
+   "resource-type": [
+    "other"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*serveris\\.lv/images/Baners/.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*signe\\.lv/userfiles/image/main%20page%20banners/.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*source\\.pilseta24\\.lv[^a-zA-Z0-9_\\-\\.%].*",
+   "resource-type": [
+    "image"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*sportazinas\\.com/.*/1920x1000.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*sportazinas\\.com/wp-content/uploads/.*\\.gif.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*sudzibas\\.lv/baneris_.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*tavacena\\.lv/images/ltc/.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*tele2\\.lv[^a-zA-Z0-9_\\-\\.%].*_popup_.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*tours\\.lv/images/misc/.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*tvnet\\.lv/assets/js/vast\\.js.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*tvnet\\.lv/js/ad\\.js.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*varianti\\.lv/static/banners/.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*vgk\\.lv/adv/.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*viastream\\.viasat\\.tv/Commercials/.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*xp\\.lv/res/banners/.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*zip\\.lv/kasjauns\\.swf.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*1188\\.lv[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*1shop\\.lv/i/ban/.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*a\\.alicdn\\.com[^a-zA-Z0-9_\\-\\.%].*300x250\\..*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*a\\.draugiem\\.lv[^a-zA-Z0-9_\\-\\.%].*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*adbox\\.lv[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*adhands\\.ru[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*adsplius\\.lt[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*agk\\.lv[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*airbalticblog\\.com/shared/.*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*alida\\.lv/upload/banner/.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*apollo\\.lv/article/feed/iframe/.*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*apollo\\.lv/upload/city24.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*apps\\.lv/timthumb\\.php\\?.*/uploads/shop_images/.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*ass\\.lv/iframe/.*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*auto24\\.lv[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*b\\.itvnet\\.lv[^a-zA-Z0-9_\\-\\.%].*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*banneri\\.lv[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*beta\\.lt[^a-zA-Z0-9_\\-\\.%].*/banners.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*cetrassezonas\\.lv/tvnet\\.php.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*chaula\\.tv/lv/output/.*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*city24\\.lv/ibox/.*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*cv\\.lv[^a-zA-Z0-9_\\-\\.%].*\\?type=banner.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*delphi\\.lv/bizness/techchill/.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*delphi\\.lv/fp/i/airBaltic_block_v3_logo\\.svg.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*delphi\\.lv[^a-zA-Z0-9_\\-\\.%].*/ads/.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*diena\\.lv/boxnews\\.html.*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*doaffiliate\\.net[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*evolution\\.lv[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*goaff\\.com[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*h\\.itvnet\\.lv[^a-zA-Z0-9_\\-\\.%].*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*ifrype\\.com/ad_v/.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*ifrype\\.com/miniads.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*ifrype\\.com[^a-zA-Z0-9_\\-\\.%].*/ad_v\\..*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*ifrype\\.com[^a-zA-Z0-9_\\-\\.%].*/ads\\..*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*itvnet\\.lv/partner/.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*knc\\.lv[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*latloto\\.lv/banner/.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*leta\\.lv/bm/www/images/.*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*manasfinanses\\.lv/apollo-widget.*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*maxtraffic\\.com[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*media\\.city24\\.lv[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*miljons\\.com/widget/.*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*mtgonline\\.lv/counter-smscredit/.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*nagi\\.ee[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*nerealitate\\.lv[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*next\\.lv[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*novonews\\.lv/ticker/flash/.*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*olybet\\.lv[^a-zA-Z0-9_\\-\\.%].*",
+   "resource-type": [
+    "popup"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*olybet\\.lv[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*openx\\.diena\\.lv[^a-zA-Z0-9_\\-\\.%].*",
+   "resource-type": [
+    "popup"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*optibet\\.lv[^a-zA-Z0-9_\\-\\.%].*",
+   "resource-type": [
+    "popup"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*optibet\\.lv[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*otrapuse\\.lv[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*partneriem\\.smscredit\\.lv[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*pay4results\\.ee[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*perkamkopa\\.lv[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*playapi\\.mtgx\\.tv[^a-zA-Z0-9_\\-\\.%].*/banners.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*prieks\\.lv[^a-zA-Z0-9_\\-\\.%].*/banner/.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*promo\\.boomtime\\.lv[^a-zA-Z0-9_\\-\\.%].*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*reklama\\.lv/promotion/.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*rembi\\.lv[^a-zA-Z0-9_\\-\\.%].*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*saites\\.eon\\.lv[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*salidzini\\.lv/affiliate/.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*salidzini\\.lv/images/120x40\\.php.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*salidzini\\.lv/images/88x31\\.php.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*salidzini\\.lv/images/banner/.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*serveris\\.lv/images/affiliate/.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*sludini\\.lv[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*smartad\\.lv[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*styleweb\\.lv[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*sure\\.lv[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*tvnet\\.lv/export_news/.*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*twistoo\\.co[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*videoavatars\\.com[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*w\\.ifrype\\.com[^a-zA-Z0-9_\\-\\.%].*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*zizu\\.lv/bpublic/.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*zizu\\.lv/campaigns/.*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*"
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": "a[href=\"http://www.salidzini.lv/\"][style=\"display: block; width: 120px; height: 40px; overflow: hidden; position: relative;\"], a[href=\"http://www.salidzini.lv/\"][style=\"display: block; width: 88px; height: 31px; overflow: hidden; position: relative;\"]"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*",
+   "if-domain": [
+    "*1188.lv"
+   ]
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": ".LabsservissAdd"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*",
+   "if-domain": [
+    "*1a.lv"
+   ]
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": ".creamcredit"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*",
+   "if-domain": [
+    "*1s.lv"
+   ]
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": ".reklama2"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*",
+   "if-domain": [
+    "*apollo.tvnet.lv"
+   ]
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": "#e-shop-banner-block, .banner-block, .banner-block-small, .custom-ad-widget, .e-shop-banner-block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*",
+   "if-domain": [
+    "*bauskasdzive.lv"
+   ]
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": "#execphp-10"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*",
+   "if-domain": [
+    "*bilesuserviss.lv"
+   ]
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": ".banner_clicker, .main_column_banner, .top_banner"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*",
+   "if-domain": [
+    "*boot.lv"
+   ]
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": "#shop-item, .bootlv_recommends, .top_header_wrapper, div[style=\"padding: 10px;text-align:center;\"], td[style=\"padding: 0 0 0 10px; width: 250px; vertical-align: top;\"]"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*",
+   "if-domain": [
+    "*cvmarket.lv"
+   ]
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": ".with_banner"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*",
+   "if-domain": [
+    "*db.lv"
+   ]
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": "#outer-left, #outer-right, #slid_close"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*",
+   "if-domain": [
+    "*db.lv",
+    "*sportacentrs.com",
+    "*tvnet.lv"
+   ]
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": ".banner"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*",
+   "if-domain": [
+    "*delfi.lv"
+   ]
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": "#AS-Widget, #background-giga, #bp-ads-block-1, #column3 a[style=\"margin-bottom: 10px;\"], #custom-ads-block-33, #horoweatherblock, #inch-lv, #top-banner, .ads-block-small, .ads-blocks-link, .adsAdmin-section, .airbaltic-blog, .car-city24, .city24-2nd, .city24-2nd-block-title, .city24-2nd-items, .city24-2nd-news, .city24-articles, .city24-topBlock-extraLine, .city24-topBlock-wrapper, .city24ni, .city24nib, .d-sm-block, .pardod-widget, .top-banner, .veikali-banners-active, .zave-wrapper, .zave_r, div.adsAdmin-iblock-pinned, div.adsAdmin-section, div[style=\"background:#fef2d9;\"], div[style=\"margin:10px;border:1px dashed #8e8e9e;overflow:auto;padding-left:15px;padding-right:15px;padding-top:10px;padding-bottom:10px\"], div[style=\"margin:10px;margin-bottom:0;padding-bottom:10px;text-align:center;border-bottom:1px solid #b4c8de;text-align:center;\"], div[style=\"width:150px;margin-bottom:5px;\"], table[style=\"background-color: #ECECEC; width:250px;\"]"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*",
+   "if-domain": [
+    "*delfi.lv",
+    "*gudriem.lv",
+    "*kurpirkt.lv"
+   ]
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": ".clo"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*",
+   "if-domain": [
+    "*delfi.lv",
+    "*morning.lv"
+   ]
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": "#right, .delfi_shop, [id^=\"adoceandelfilv\"]"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*",
+   "if-domain": [
+    "*delfi.lv",
+    "*morning.lv",
+    "*skats.lv"
+   ]
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": ".articlebanner"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*",
+   "if-domain": [
+    "*diena.lv"
+   ]
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": "#tagcloud"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*",
+   "if-domain": [
+    "*draugiem.lv"
+   ]
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": ".adv"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*",
+   "if-domain": [
+    "*e-klase.lv"
+   ]
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": "#mammtet_box, .adv_urls, .adv_urls_b, .adv_urls_t, .right_widget_item.tvnet"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*",
+   "if-domain": [
+    "*easyget.lv"
+   ]
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": "[class^=\"adholder\"], div[style=\"padding-top:5px;text-align:center;margin-bottom:10px;line-height:1;\"]"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*",
+   "if-domain": [
+    "*elektroenergija.lv"
+   ]
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": ".adv-txt"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*",
+   "if-domain": [
+    "*europeanhitradio.com",
+    "*europeanhitradio.lv"
+   ]
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": "td[style=\"padding-top:10px;padding-left:6px;padding-bottom:10px;\"]"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*",
+   "if-domain": [
+    "*forums.delfi.lv"
+   ]
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": "div[style=\"width:250px;\"]:last-child"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*",
+   "if-domain": [
+    "*gay.lv"
+   ]
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": "div[style=\"width:568px;height:60px;background-color:#000000;\"]"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*",
+   "if-domain": [
+    "*gismeteo.lv"
+   ]
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": ".placeholder"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*",
+   "if-domain": [
+    "*google.lv"
+   ]
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": "#rhscol, #taw"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*",
+   "if-domain": [
+    "*gramata.ucoz.lv"
+   ]
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": "[style=\"text-align:center;border:1px dashed #000000;width:468px;height:60px;position:absolute;overflow:hidden;margin-top:-20px;margin-right:160px;\"], [style^=\"background-image:none !important\"]"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*",
+   "if-domain": [
+    "*inbox.lv"
+   ]
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": "#inboxshops_div, #inx-main-roof, #inx-textAds, #inxAds-imr, #inxHeadAdsPlace, .bxS-text_link, [style^=\"background:url(http://b.inbox.lv/\"]"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*",
+   "if-domain": [
+    "*intim.lv"
+   ]
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": "div[style=\"margin: 8px 0px; cursor: hand;\"]"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*",
+   "if-domain": [
+    "*ir.lv"
+   ]
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": "#abonbanner"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*",
+   "if-domain": [
+    "*izklaide.delfi.lv"
+   ]
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": "#rightTop, .iepazisanas"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*",
+   "if-domain": [
+    "*jauns.lv"
+   ]
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": ".ad-container, .ad-dfp, .ad-giga-banner, .bg-jysk-subscription-banner, .bg-kastanis-subscription-banner, .meta-info__subscribe, .ph-1000x200, .ph-300x200, .ph-300x250, .shop-list, .shop-multiple-items, .tele2-slider-wrap, .translate-x-0.opacity-100.duration-500.transition-all.z-\\[999\\].-translate-y-1\\/2.top-1\\/2.left-0.fixed, .vfm--inset.vfm--fixed.vfm.items-center.justify-center.flex"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*",
+   "if-domain": [
+    "*kopaa.lv"
+   ]
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": ".adv_column"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*",
+   "if-domain": [
+    "*krusttevs.com"
+   ]
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": "#reklamas_rt"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*",
+   "if-domain": [
+    "*kurpirkt.lv"
+   ]
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": "#leja_scroll, #top_ba_pos, .campaignblock1, .campaignblock2, .labsblock1, .labsblock2, .producttd[style=\"border:solid 1px #448c26;background:#fafafa;\"]"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*",
+   "if-domain": [
+    "*kursors.lv"
+   ]
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": ".pum"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*",
+   "if-domain": [
+    "*kurzemnieks.lv"
+   ]
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": ".banner-container.header"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*",
+   "if-domain": [
+    "*la.lv"
+   ]
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": ".side-banner"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*",
+   "if-domain": [
+    "*lasi.lv"
+   ]
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": ".article-advertisement"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*",
+   "if-domain": [
+    "*lattelecom.lv"
+   ]
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": "[id^=\"fixme_\"]"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*",
+   "if-domain": [
+    "*lsm.lv"
+   ]
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": ".adbox"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*",
+   "if-domain": [
+    "*mail.inbox.lv"
+   ]
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": "tr[id^=\"row\"]"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*",
+   "if-domain": [
+    "*miljons.com"
+   ]
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": "#opencredit, div[style=\"padding:3px; font-size:13px;\"]"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*",
+   "if-domain": [
+    "*notepad.lv"
+   ]
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": "#blocks > .tabsaction + .news, #footer > div:last-child, #section_full + #blocks > .news:first-child, .aptauja[style=\"margin-top:0px;margin-bottom:20px;\"], .banner_center, .hostnet"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*",
+   "if-domain": [
+    "*nozare.lv"
+   ]
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": "div[style=\"position:absolute;width:725px;height:90px;margin-left:250px;margin-top:33px;\"]"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*",
+   "if-domain": [
+    "*nra.lv"
+   ]
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": "div[style=\"padding-top:2px; font-size:0.917em;\"]"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*",
+   "if-domain": [
+    "*oho.lv"
+   ]
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": "div[style=\"width:180px; overflow:hidden; background:#ffffff; border: solid 1px #D30528; font-family:Verdana; font-size:11px; margin: 5px 0px 10px 0px;\"]"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*",
+   "if-domain": [
+    "*pilseta24.lv"
+   ]
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": ".card--alternative, .row > .text-center, .text-center.card, p:has(> a[href*=img])"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*",
+   "if-domain": [
+    "*pornotv.lv"
+   ]
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": "#footer > table[width=\"100%\"], .top_slud.sakums"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*",
+   "if-domain": [
+    "*press.lv"
+   ]
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": ".ads--banner, .post-content-inner--ad-block, .zdorovje-widget"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*",
+   "if-domain": [
+    "*receptes.lv"
+   ]
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": "#slider-wrap"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*",
+   "if-domain": [
+    "*reklama.lv"
+   ]
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": ".right_column, div[style=\"margin-bottom:15px;\"]"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*",
+   "if-domain": [
+    "*riga.lv"
+   ]
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": "#_ctl16_HtmlBanner, [id^=\"_ctl20_Elements__\"]"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*",
+   "if-domain": [
+    "*rigaslaiks.lv"
+   ]
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": "#ctl00_divAd1"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*",
+   "if-domain": [
+    "*rimi.lv"
+   ]
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": ".offer__content.js-gtm-eec-banner-click"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*",
+   "if-domain": [
+    "*runabildes.lv"
+   ]
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": "div[style=\"float:none;margin:10px 0 10px 0;text-align:center;\"]"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*",
+   "if-domain": [
+    "*salidzini.lv"
+   ]
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": "#AM_bottom, #AM_giga, #AM_giga_main, #AM_mobile_1, #AM_scroll_row, #AM_tower_div, #AM_tower_sub, .item_link[href^=\"/rekred.php\"], .item_link[href^=\"/rekred1click\"], [class*=\"fall15back\"], [id^=\"fall15back\"], [id^=\"media_place\"], div:has(a[href*=\"fall15back\"]), div[id^=\"am\"]:empty, div[id^=\"am\"][id*=\"giga\"], div[id^=\"am\"][id*=\"tower\"]"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*",
+   "if-domain": [
+    "*skaties.lv"
+   ]
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": "[id^=\"_fw_frame_\"]"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*",
+   "if-domain": [
+    "*spoki.tvnet.lv"
+   ]
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": "#spec_head"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*",
+   "if-domain": [
+    "*sportacentrs.com"
+   ]
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": ".r_article, table[style=\"width: 240px; height: 97px;\"]"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*",
+   "if-domain": [
+    "*sportazinas.com"
+   ]
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": ".category-summary--content-intro, .related--ads"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*",
+   "if-domain": [
+    "*ss.lv"
+   ]
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": "#ads_sys_div1, #sys_bnr_tbl"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*",
+   "if-domain": [
+    "*tele2.lv"
+   ]
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": "#fancybox-overlay"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*",
+   "if-domain": [
+    "*tera.lv"
+   ]
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": "#REKLAI"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*",
+   "if-domain": [
+    "*travelnews.lv"
+   ]
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": "table + #div_main_right_block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*",
+   "if-domain": [
+    "*tv.delfi.lv"
+   ]
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": ".toolblock"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*",
+   "if-domain": [
+    "*tvnet.lv"
+   ]
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": "#ad_center_top_500x150, #ag_b_wrapper, #ag_wrapper, #c24-container, #flag-banner, #footer_banner, #middle_156_xml, #shops_offer, #whatcar, .ad__kvadrats, .article-content-width__ads, .article-lead-image-ad, .autoplius-ad, .banner-block-new, .banner_container, .c24-box, .city24bl-cont, .comment-baner-outer, .customers, .divTable_la, .fp_horiz_ads_150x150, .lead-banner, .list.customer, .pattern-side--ads, .right-sidebar-top__ad, .right_custom_ad_2_pics, .right_custom_ad_four_pics_city24, [id^=\"ad120x600\"], a[style=\"text-decoration: underline; cursor: pointer; padding-right: 17px; background: url('/assets/images/title_link.gif') right center no-repeat;\"], div[style=\"height:53px; width:100%; position:fixed; bottom:0px; left:0px; background-color:white; z-index:999999; background-position:center center; background-image: url('http://b.itvnet.lv/_sa_alkohols.jpg'); background-repeat:no-repeat;\"]"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*",
+   "if-domain": [
+    "*tvnet.lv",
+    "*apollo.lv"
+   ]
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": "div[style=\"position: absolute; inset: 0px; background: rgba(0, 0, 0.7) none repeat scroll 0% 0%; z-index: 1004;\"]"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*",
+   "if-domain": [
+    "*uzkartes.lv"
+   ]
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": "#sz"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*",
+   "if-domain": [
+    "*varianti.lv"
+   ]
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": ".ad_prian, .textbanners"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*",
+   "if-domain": [
+    "*vgk.lv"
+   ]
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": ".infobox"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*",
+   "if-domain": [
+    "*zeltazivtina.lv"
+   ]
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": "#banner"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*",
+   "if-domain": [
+    "*zip.lv"
+   ]
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": "#perkam_group_banner, .zip_spotlight.main_td"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*",
+   "if-domain": [
+    "*zz.lv"
+   ]
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": ".widget_execphp:has([class^=tag][class*=cloud])"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*",
+   "if-domain": [
+    "*zz.lv",
+    "*staburags.lv",
+    "*aluksniesiem.lv",
+    "*bauskasdzive.lv",
+    "*dzirkstele.lv",
+    "*ziemellatvija.lv",
+    "*rekurzeme.lv"
+   ]
+  },
+  "action": {
+   "type": "css-display-none",
+   "selector": ".content-add-desktop-description"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*/optibet\\.jpg$",
+   "unless-domain": [
+    "*optibet.lu",
+    "*optibet.lv",
+    "*optibet.com",
+    "*optibet.ee",
+    "*optibet.lt"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*salidzini\\.lv[^a-zA-Z0-9_\\-\\.%].*",
+   "if-domain": [
+    "*salidzini.lv"
+   ],
+   "resource-type": [
+    "script"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*freewheel-mtgx-tv\\.akamaized\\.net[^a-zA-Z0-9_\\-\\.%].*",
+   "if-domain": [
+    "*skaties.lv"
+   ],
+   "resource-type": [
+    "media"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*h\\.itvnet\\.lv[^a-zA-Z0-9_\\-\\.%].*/adjs/adjs/ads\\.js.*",
+   "if-domain": [
+    "*tvnet.lv"
+   ],
+   "resource-type": [
+    "script"
+   ]
+  },
+  "action": {
+   "type": "ignore-previous-rules"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*lsm\\.lv/public/scripts/ads\\.js.*",
+   "resource-type": [
+    "script",
+    "image",
+    "style-sheet",
+    "other",
+    "raw",
+    "ping",
+    "websocket",
+    "document"
+   ],
+   "load-type": [
+    "first-party"
+   ]
+  },
+  "action": {
+   "type": "ignore-previous-rules"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*ltv\\.lsm\\.lv/scripts/ads\\.js.*",
+   "resource-type": [
+    "script"
+   ]
+  },
+  "action": {
+   "type": "ignore-previous-rules"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*playapi\\.mtgx\\.tv/v3/adinfo.*",
+   "resource-type": [
+    "raw"
+   ]
+  },
+  "action": {
+   "type": "ignore-previous-rules"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*varianti\\.lv/ads/load_ad_images/.*",
+   "resource-type": [
+    "script",
+    "image",
+    "style-sheet",
+    "other",
+    "raw",
+    "ping",
+    "websocket",
+    "document"
+   ],
+   "load-type": [
+    "first-party"
+   ]
+  },
+  "action": {
+   "type": "ignore-previous-rules"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*visidarbi\\.lv/advertisements.*",
+   "resource-type": [
+    "script",
+    "image",
+    "style-sheet",
+    "other",
+    "raw",
+    "ping",
+    "websocket",
+    "document"
+   ],
+   "load-type": [
+    "first-party"
+   ]
+  },
+  "action": {
+   "type": "ignore-previous-rules"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*b\\.adbox\\.lv/bxlib/js/emiter\\.js\\?.*",
+   "if-domain": [
+    "*lsm.lv"
+   ],
+   "resource-type": [
+    "script"
+   ]
+  },
+  "action": {
+   "type": "ignore-previous-rules"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*b\\.adbox\\.lv/bxlib/js/loader\\.js\\?.*",
+   "if-domain": [
+    "*lsm.lv"
+   ],
+   "resource-type": [
+    "script"
+   ]
+  },
+  "action": {
+   "type": "ignore-previous-rules"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*b\\.adbox\\.lv/emiter/bx_placement\\.js\\?.*",
+   "if-domain": [
+    "*lsm.lv"
+   ],
+   "resource-type": [
+    "script"
+   ]
+  },
+  "action": {
+   "type": "ignore-previous-rules"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*emediate\\.se/eas\\?.*ty=video.*",
+   "if-domain": [
+    "*apollo.lv"
+   ],
+   "resource-type": [
+    "other"
+   ]
+  },
+  "action": {
+   "type": "ignore-previous-rules"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*fwmrm\\.net/ad/g/.*",
+   "if-domain": [
+    "*skaties.lv"
+   ],
+   "resource-type": [
+    "raw"
+   ]
+  },
+  "action": {
+   "type": "ignore-previous-rules"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*fwmrm\\.net/ad/l/.*",
+   "if-domain": [
+    "*skaties.lv"
+   ],
+   "resource-type": [
+    "raw"
+   ]
+  },
+  "action": {
+   "type": "ignore-previous-rules"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*keytarget\\.adnet\\.lt[^a-zA-Z0-9_\\-\\.%].*",
+   "if-domain": [
+    "*liepajniekiem.lv"
+   ],
+   "resource-type": [
+    "script"
+   ]
+  },
+  "action": {
+   "type": "ignore-previous-rules"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*mssl\\.fwmrm\\.net/libs/adm/.*/LinkTag2\\.js.*",
+   "if-domain": [
+    "*skaties.lv"
+   ]
+  },
+  "action": {
+   "type": "ignore-previous-rules"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*tv3play\\.skaties\\.lv/static/scripts/trackdb/events\\.gif.*",
+   "if-domain": [
+    "*skaties.lv"
+   ]
+  },
+  "action": {
+   "type": "ignore-previous-rules"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*viastream\\.viasat\\.tv[^a-zA-Z0-9_\\-\\.%].*\\?affiliate=.*"
+  },
+  "action": {
+   "type": "ignore-previous-rules"
+  }
+ }
+]

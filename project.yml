@@ -1,0 +1,78 @@
+name: NOAD
+options:
+  bundleIdPrefix: com.noad
+  deploymentTarget:
+    iOS: "16.0"
+  xcodeVersion: "16.0"
+
+targets:
+  NOAD:
+    type: application
+    platform: iOS
+    sources:
+      - path: App
+        excludes:
+          - "Resources/**"
+      - path: Shared/AppConstants.swift
+      - path: App/Resources/Rules
+        buildPhase: resources
+        type: group
+    info:
+      path: App/Info.plist
+    entitlements:
+      path: Shared/NOAD.entitlements
+    settings:
+      base:
+        PRODUCT_NAME: NOAD
+        PRODUCT_BUNDLE_IDENTIFIER: com.noad.app
+        INFOPLIST_FILE: App/Info.plist
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        CODE_SIGN_ENTITLEMENTS: Shared/NOAD.entitlements
+        SWIFT_VERSION: "5.9"
+        TARGETED_DEVICE_FAMILY: "1,2"
+    dependencies:
+      - target: NOADContentBlocker
+      - target: NOADWebExtension
+
+  NOADContentBlocker:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: ContentBlockerExtension/ContentBlockerRequestHandler.swift
+      - path: Shared/AppConstants.swift
+      - path: ContentBlockerExtension/emptyBlockerList.json
+        buildPhase: resources
+    info:
+      path: ContentBlockerExtension/Info.plist
+    entitlements:
+      path: Shared/NOAD.entitlements
+    settings:
+      base:
+        PRODUCT_NAME: NOADContentBlocker
+        PRODUCT_BUNDLE_IDENTIFIER: com.noad.app.ContentBlocker
+        INFOPLIST_FILE: ContentBlockerExtension/Info.plist
+        CODE_SIGN_ENTITLEMENTS: Shared/NOAD.entitlements
+        SWIFT_VERSION: "5.9"
+        TARGETED_DEVICE_FAMILY: "1,2"
+
+  NOADWebExtension:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: WebExtension/SafariWebExtensionHandler.swift
+      - path: Shared/AppConstants.swift
+      - path: WebExtension/Resources
+        buildPhase: resources
+        type: folder
+    info:
+      path: WebExtension/Info.plist
+    entitlements:
+      path: Shared/NOAD.entitlements
+    settings:
+      base:
+        PRODUCT_NAME: NOADWebExtension
+        PRODUCT_BUNDLE_IDENTIFIER: com.noad.app.WebExtension
+        INFOPLIST_FILE: WebExtension/Info.plist
+        CODE_SIGN_ENTITLEMENTS: Shared/NOAD.entitlements
+        SWIFT_VERSION: "5.9"
+        TARGETED_DEVICE_FAMILY: "1,2"

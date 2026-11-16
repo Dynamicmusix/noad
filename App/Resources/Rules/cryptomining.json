@@ -1,0 +1,3132 @@
+[
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*23\\.83\\.114\\.131[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*2miners\\.com[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*35\\.194\\.26\\.233[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*45\\.15\\.156\\.210[^a-zA-Z0-9_\\-\\.%].*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*35\\.239\\.57\\.233[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*45\\.32\\.105\\.134[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*77\\.162\\.125\\.199[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*185\\.165\\.169\\.108[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*a-calc\\.de[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*acbp0020171456\\.page\\.tl[^a-zA-Z0-9_\\-\\.%].*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*ad-miner\\.com[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*adless\\.io[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*adminer\\.com[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*aeros02\\.tk[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*aeros12\\.tk[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*afminer\\.com[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*analytics\\.blue[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*andlache\\.com[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*ashgrrwt\\.click[^a-zA-Z0-9_\\-\\.%].*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*authedmine\\.com[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*authedmine\\.eu[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*bablace\\.com[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*bafybeidravcab5p3acvthxtwosm4rfpl4yypwwm52s7sazgxaezfzn5xn4\\.ipfs\\.infura-ipfs\\.io[^a-zA-Z0-9_\\-\\.%].*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*baiduccdn1\\.com[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*becanium\\.com[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*belicimo\\.pw[^a-zA-Z0-9_\\-\\.%].*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*besocial\\.online[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*bestcoinsignals\\.com[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*bestsrv\\.de[^a-zA-Z0-9_\\-\\.%].*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*bewaslac\\.com[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*bhzejltg\\.info[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*biberukalap\\.com[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*binarybusiness\\.de[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*bitcoin-cashcard\\.com[^a-zA-Z0-9_\\-\\.%].*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*bmcm\\.pw[^a-zA-Z0-9_\\-\\.%].*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*bmnr\\.pw[^a-zA-Z0-9_\\-\\.%].*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*bmst\\.pw[^a-zA-Z0-9_\\-\\.%].*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*brominer\\.com[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*browsermine\\.com[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*candid\\.zone[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*cashbeet\\.com[^a-zA-Z0-9_\\-\\.%].*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*cdn\\.cloudcoins\\.co[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*cfcdist\\.gdn[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*clgserv\\.pro[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*cloud-miner\\.de[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*cloud-miner\\.eu[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*cloudcdn\\.gdn[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*cloudflane\\.com[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*cnhv\\.co[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*coin-have\\.com[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*coinblind\\.com[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*coinerra\\.com[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*coinimp\\.com.*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*coinimp\\.net.*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*coinnebula\\.com[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*coinpirate\\.cf[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*coinpot\\.co[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*coinrail\\.io[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*cpufan\\.club[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*cryptaloot\\.pro[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*crypto-loot\\.com[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*crypto-webminer\\.com[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*crypto\\.csgocpu\\.com[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*cryptobara\\.com[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*cryptoloot\\.pro[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*cryptonoter\\.com[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*datasecu\\.download[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*devphp\\.org\\.ua[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*dontbeevils\\.de[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*donttbeevils\\.de[^a-zA-Z0-9_\\-\\.%].*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*easyhash\\.de[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*eth-pocket\\.com[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*eth-pocket\\.de[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*ethereum-cashcard\\.com[^a-zA-Z0-9_\\-\\.%].*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*ethereum-pocket\\.com[^a-zA-Z0-9_\\-\\.%].*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*eucsoft\\.com[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*evilsbedont\\.de[^a-zA-Z0-9_\\-\\.%].*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*f1tbit\\.com[^a-zA-Z0-9_\\-\\.%].*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*filmoljupci\\.com[^a-zA-Z0-9_\\-\\.%].*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*flare-analytics\\.com[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*formulawire\\.com[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*g1thub\\.com[^a-zA-Z0-9_\\-\\.%].*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*gay-hotvideo\\.net[^a-zA-Z0-9_\\-\\.%].*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*go\\.bestmobiworld\\.com[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*go\\.megabanners\\.cf[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*go\\.megabanners\\.cf[^a-zA-Z0-9_\\-\\.%].*",
+   "resource-type": [
+    "websocket"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*gridiogrid\\.com[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*gxbrowser\\.net[^a-zA-Z0-9_\\-\\.%].*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*hemnes\\.win[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*herominers\\.com[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*igrid\\.org[^a-zA-Z0-9_\\-\\.%].*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*ijfcm7bu6ocerxsfq56ka3dtdanunyp4ytwk745b54agtravj2wr2qqd\\.onion\\.pet[^a-zA-Z0-9_\\-\\.%].*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*intelserviceupdate\\.com[^a-zA-Z0-9_\\-\\.%].*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*jqwww\\.download[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*jscdndel\\.com[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*jscoinminer\\.com[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*jsecoin\\.com[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*laserveradedomaina\\.com[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*lightminer\\.co[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*losital\\.ru[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*machieved\\.com[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*mail\\.ghmproperties\\.com[^a-zA-Z0-9_\\-\\.%].*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*mail\\.itseasy\\.com[^a-zA-Z0-9_\\-\\.%].*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*mail\\.shaferglazer\\.com[^a-zA-Z0-9_\\-\\.%].*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*mail\\.techniservinc\\.com[^a-zA-Z0-9_\\-\\.%].*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*mepirtedic\\.com[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*mi-de-ner-nis3\\.info[^a-zA-Z0-9_\\-\\.%].*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*mine\\.blank\\.drawpad\\.org[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*mine\\.terorie\\.com[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*minemytraffic\\.com[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*minerad\\.com[^a-zA-Z0-9_\\-\\.%].*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*minero-proxy-.*\\.now\\.sh[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*mining\\.best[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*monerominer\\.rocks[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*mutuza\\.win[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*my\\.domain[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*nablabee\\.com[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*nametraff\\.com[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*nerohut\\.com[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*netflare\\.info[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*nfwebminer\\.com[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*nimiq\\.surf[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*nimiqchina\\.com[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*nitrokod\\.com[^a-zA-Z0-9_\\-\\.%].*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*notmining\\.org[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*offerreality\\.com[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*ogrid\\.org[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*pampopholf\\.com[^a-zA-Z0-9_\\-\\.%].*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*papoto\\.com[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*party-vqgdyvoycc\\.now\\.sh[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*pertholin\\.com[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*premiumstats\\.xyz[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*pr0gram\\.org[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*pzoifaum\\.info[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*reauthenticator\\.com[^a-zA-Z0-9_\\-\\.%].*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*roastedvolt\\.net[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*rocks\\.io[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*scaleway\\.ovh[^a-zA-Z0-9_\\-\\.%].*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*serie-vostfr\\.com[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*serv1swork\\.com[^a-zA-Z0-9_\\-\\.%].*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*silimbompom\\.com[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*sourcecode\\.pro[^a-zA-Z0-9_\\-\\.%].*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*spacepools\\.org[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*sparechange\\.io[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*srcip\\.com[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*srcips\\.com[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*statdynamic\\.com[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*statistic\\.date[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*stonecalcom\\.com[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*str1kee\\.com[^a-zA-Z0-9_\\-\\.%].*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*sunnimiq\\.cf[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*swiftmining\\.win[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*tercabilis\\.info[^a-zA-Z0-9_\\-\\.%].*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*thewhizmarketing\\.com[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*thewhizproducts\\.com[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*thewise\\.com[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*traffic\\.tc-clicks\\.com[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*trustaproiam\\.de[^a-zA-Z0-9_\\-\\.%].*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*trusteverything\\.de[^a-zA-Z0-9_\\-\\.%].*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*trustiseverything\\.de[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*tulip18\\.com[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*verifier\\.live[^a-zA-Z0-9_\\-\\.%].*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*vkcdnservice\\.com[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*vuryua\\.ru[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*webapi\\.salamantex\\.com[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*webapi\\.staging\\.salamantex\\.com[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*webmine\\.cz[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*webmine\\.pro[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*webminepool\\.com[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*webminerpool\\.com[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*webmining\\.co[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*webxmr\\.com[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*wordc\\.ga[^a-zA-Z0-9_\\-\\.%].*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*wtm\\.monitoringservice\\.co[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*xmr\\.cool[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*zlx\\.com\\.br[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*freecontent\\.date.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*freecontent\\.live.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*freecontent\\.stream.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*hostcontent\\.live.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*hostingcloud\\.party.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*hostingcloud\\.racing.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*wasm\\.stream.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*flightsy\\.win.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*flightzy\\.date.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*hashing\\.win.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*webassembly\\.stream.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*-coin-hive\\.js.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*-crypto-miner/.*.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*-monero-miner-.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*-monero-miner/.*.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*/authedminer\\.js.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*/bitcoin-plus-miner/.*.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*/bitcoincore/\\?ref=.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*/bootstrap\\.wasm.*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*/bootstrap\\.wasm.*",
+   "resource-type": [
+    "raw"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*/browsermine\\.js.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*/c-hive\\.js.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*/c\\.wasm.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*/cloudcoins\\.js.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*/cloudcoins\\.min\\.js.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*/cn\\.wasm.*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*/coin-hive-proxy-.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*/coinblind\\.js.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*/coinblind_beta\\..*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*/coinGofile\\..*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*/coinhive-proxy-.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*/coinhive\\.min\\.js.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*/coinlab\\.js.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*/compact_miner\\?.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*/crn\\.wasm.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*/crypta\\.js.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*/cryptocpu\\.js.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*/cryptonight-worker\\..*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*/cryptonight\\.wasm.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*/cryptonoter\\..*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*/deepMiner\\.js.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*/deepMiner\\.min\\.js.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*/dprocessor\\.js.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*/hash\\.wasm.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*/helper\\.wasm.*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*/inject\\.js\\?key=.*",
+   "resource-type": [
+    "script"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*/jsecoin\\..*/\\?.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*/lhnhelpouttab-current\\.min\\.js.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*/lib/crlt\\.js.*",
+   "resource-type": [
+    "script"
+   ],
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*/media/miner\\..*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*/mine/bitcoincore/.*.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*/miner_proxy.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*/miner-ui\\.js.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*/miner\\..*/crypto-.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*/miner\\..*/loader\\..*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*/miner\\.full\\.js.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*/miner\\.js.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*/miner\\.min\\.js.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*/miner\\?key=.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*/minera\\.js.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*/minero-proxy-.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*/minescripts\\.js.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*/nano\\.wasm.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*/noblock\\.js.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*/obfus\\.min\\.js.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*/projectpoi\\.min\\.js.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*/poolstatus\\?.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*/safelinkconverter\\.js.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*/script_cry\\.js.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*/web_miner/.*.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*/webcoin\\.js.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*/webcoin\\.min\\.js.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*/webmr\\.js.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*/webxmr\\.js.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*/wproxy.*",
+   "resource-type": [
+    "document",
+    "image",
+    "other",
+    "ping",
+    "raw",
+    "script",
+    "style-sheet",
+    "websocket"
+   ],
+   "load-type": [
+    "first-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*/xminer\\.js.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*/xminer\\.min\\.js.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*/xmr-monero\\.js.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*/xmr\\.js.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*/xmr\\.min\\.js.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*\\?.*\\.spacepools\\..*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*\\.spacepools\\..*:.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*\\.aspx\\?poolid=.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*\\.cfm\\?poolid=.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*=ws://.*\\?pool=.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*=ws://.*\\?pools=.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*=wss://.*\\?pool=.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*=wss://.*\\?pools=.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*\\?proxy=.*\\?pool=.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*\\?proxy=.*\\?pools=.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*\\?proxy=ws://.*",
+   "resource-type": [
+    "script",
+    "websocket"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*\\?proxy=wss://.*",
+   "resource-type": [
+    "script",
+    "websocket"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*\\.website/lib/.*\\.wasm.*",
+   "resource-type": [
+    "raw"
+   ],
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*dekoder\\.ws[^a-zA-Z0-9_\\-\\.%].*\\?proxy=.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*cryptobara\\.com/client/worker\\.js.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*nahnoji\\.cz[^a-zA-Z0-9_\\-\\.%].*",
+   "resource-type": [
+    "websocket"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*js\\.nahnoji\\.cz[^a-zA-Z0-9_\\-\\.%].*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*mine\\.nahnoji\\.cz[^a-zA-Z0-9_\\-\\.%].*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*hive\\.tubetitties\\.com[^a-zA-Z0-9_\\-\\.%].*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*miner\\.nablabee\\.com[^a-zA-Z0-9_\\-\\.%].*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*shrink-service\\.it/js/cM\\.js.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*ddns\\.net[^a-zA-Z0-9_\\-\\.%].*=ws://.*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*ddns\\.net[^a-zA-Z0-9_\\-\\.%].*=wss://.*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*myeffect\\.net[^a-zA-Z0-9_\\-\\.%].*=ws://.*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*myeffect\\.net[^a-zA-Z0-9_\\-\\.%].*=wss://.*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*sleeptimer\\.org/playerc\\.js.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*kinokongo\\.cc[^a-zA-Z0-9_\\-\\.%].*\\.php.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*directprimal\\.com[^a-zA-Z0-9_\\-\\.%].*",
+   "resource-type": [
+    "websocket"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*cinemafacil\\.com/js\\.php.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*cdn1\\.pebx\\.pl[^a-zA-Z0-9_\\-\\.%].*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*wallpoper\\.com[^a-zA-Z0-9_\\-\\.%].*/c\\.js.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*shush\\.se/loader/load\\.js.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*uptostream\\..*/assets/.*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*pool\\.supportxmr\\.com[^a-zA-Z0-9_\\-\\.%].*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*grf\\.easyhash\\.io[^a-zA-Z0-9_\\-\\.%].*"
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*minexmr\\.com[^a-zA-Z0-9_\\-\\.%].*",
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*authedwebmine\\.cz[^a-zA-Z0-9_\\-\\.%].*",
+   "unless-domain": [
+    "*webmine.cz"
+   ],
+   "load-type": [
+    "third-party"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*-monero-miner\\..*",
+   "unless-domain": [
+    "*wp-monero-miner.com"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*/authedmine\\..*",
+   "unless-domain": [
+    "*authedmine.com",
+    "*authedmine.eu"
+   ],
+   "resource-type": [
+    "script"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*/crypto-webminer\\..*",
+   "unless-domain": [
+    "*crypto-webminer.com"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*\\.info[^a-zA-Z0-9_\\-\\.%].*",
+   "if-domain": [
+    "*sleeptimer.org"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*.*",
+   "if-domain": [
+    "*123telugu.com",
+    "*300mbfilms.co",
+    "*ajplugins.com",
+    "*animeteatr.ru",
+    "*arnaques-internet.info",
+    "*atk-exotics.com",
+    "*atkebony.com",
+    "*babyjav.com",
+    "*bigspeeds.com",
+    "*btstors.com",
+    "*bustrain.net",
+    "*centrum-dramy.pl",
+    "*chemikino.ru",
+    "*cinemafacil.com",
+    "*citypaintsupplyghana.com",
+    "*clipwatching.com",
+    "*coinfaucet.eu",
+    "*coinhub.win",
+    "*cracklists.com",
+    "*crictime.com",
+    "*crictime.is",
+    "*dekoder.ws",
+    "*deltabit.co",
+    "*descargas2020.com",
+    "*djs.sk",
+    "*domnuleprimar.ro",
+    "*dragonballzpolo.blogspot.com",
+    "*eduardolegatti.blogspot.com",
+    "*fileone.tv",
+    "*filmonet.com",
+    "*filmovix.com",
+    "*filmovix.net",
+    "*filmovix.org",
+    "*filmstreamvk.me",
+    "*filmstreamvk.net",
+    "*filmstreamvk.org",
+    "*filmstreamvk.site",
+    "*filmyhd.cz",
+    "*firstone.tv",
+    "*firstonetv.eu",
+    "*firstonetv.live",
+    "*fruithosts.net",
+    "*funtik.tv",
+    "*genashowalter.com",
+    "*hdvid.tv",
+    "*hqq.tv",
+    "*ianimes.co",
+    "*inside-out.xyz",
+    "*javdl.co",
+    "*jkanime.net",
+    "*kickass.cd",
+    "*kinohabr.net",
+    "*kinokongo.cc",
+    "*kinoprofi.org",
+    "*kinosha.cc",
+    "*lafmacun.net",
+    "*leitor.net",
+    "*lewd.ninja",
+    "*love-drama.pl",
+    "*mladipodnikatelia.sk",
+    "*movie4k.is",
+    "*mrunlock.icu",
+    "*myfeed4u.net",
+    "*nahnoji.cz",
+    "*netiap.com",
+    "*neurozinzin.com",
+    "*novator.az",
+    "*novoscrb.ru",
+    "*onlinevideoconverter.com",
+    "*openload.cc",
+    "*pebx.pl",
+    "*peliculas24.me",
+    "*pelisplus.online",
+    "*pezeshk.us",
+    "*potomy.ru",
+    "*powvideo.cc",
+    "*powvideo.net",
+    "*protect-iframe.com",
+    "*protect-link.biz",
+    "*rapidvideo.com",
+    "*reactor.cc",
+    "*rednubes.de",
+    "*salon.com",
+    "*seriesenlinea.net",
+    "*severita-service.ru",
+    "*sherlockonline.ru",
+    "*shrink-service.it",
+    "*shush.se",
+    "*sickrage.ca",
+    "*sleeptimer.org",
+    "*sorteosrd.com",
+    "*studio100.it",
+    "*tapemovie.com",
+    "*tarntercum.ru",
+    "*theappguruz.com",
+    "*tomadivx.tv",
+    "*torrentrapid.com",
+    "*tubetitties.com",
+    "*tugaanimado.net",
+    "*uptobox.com",
+    "*uptobox.fr",
+    "*uptobox.link",
+    "*uptostream.com",
+    "*uptostream.fr",
+    "*uptostream.link",
+    "*uptostream.eu",
+    "*vev.io",
+    "*vidfile.net",
+    "*vidoza.co",
+    "*vidoza.net",
+    "*vidtudu.com",
+    "*vidup.me",
+    "*void.cat",
+    "*voirfilms.mx",
+    "*wallpoper.com",
+    "*wearesaudis.net",
+    "*yourjav.com",
+    "*zona.plus"
+   ],
+   "resource-type": [
+    "websocket"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*.*",
+   "if-domain": [
+    "*auroravid.to",
+    "*dekoder.ws",
+    "*powvideo.cc",
+    "*powvideo.net",
+    "*sorteosrd.com",
+    "*vidfile.net"
+   ],
+   "resource-type": [
+    "raw"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": ".*.*",
+   "if-domain": [
+    "*pirateproxy.mx",
+    "*thepiratebay.by",
+    "*thepiratebay.org",
+    "*thepiratebay.rocks",
+    "*thepiratebay10.org",
+    "*unblocktheship.org"
+   ],
+   "resource-type": [
+    "script",
+    "websocket"
+   ]
+  },
+  "action": {
+   "type": "block"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*api\\.nyda\\.pro[^a-zA-Z0-9_\\-\\.%].*",
+   "resource-type": [
+    "websocket"
+   ]
+  },
+  "action": {
+   "type": "ignore-previous-rules"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*ws\\.webcaster\\.pro[^a-zA-Z0-9_\\-\\.%].*",
+   "resource-type": [
+    "websocket"
+   ]
+  },
+  "action": {
+   "type": "ignore-previous-rules"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*broadcastt\\.xyz/apps/.*",
+   "resource-type": [
+    "websocket"
+   ]
+  },
+  "action": {
+   "type": "ignore-previous-rules"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*lags\\.win/ctf.*",
+   "resource-type": [
+    "websocket"
+   ]
+  },
+  "action": {
+   "type": "ignore-previous-rules"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*siteapi\\.idkfa\\.online/v2/units/socket/websocket\\?.*",
+   "resource-type": [
+    "websocket"
+   ]
+  },
+  "action": {
+   "type": "ignore-previous-rules"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*live\\.api\\.stream[^a-zA-Z0-9_\\-\\.%].*",
+   "resource-type": [
+    "websocket"
+   ]
+  },
+  "action": {
+   "type": "ignore-previous-rules"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*quiknode\\.pro[^a-zA-Z0-9_\\-\\.%].*",
+   "resource-type": [
+    "websocket"
+   ]
+  },
+  "action": {
+   "type": "ignore-previous-rules"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "^https?:\\/\\/(.*\\.)*aptal\\.pro[^a-zA-Z0-9_\\-\\.%].*",
+   "resource-type": [
+    "websocket"
+   ]
+  },
+  "action": {
+   "type": "ignore-previous-rules"
+  }
+ }
+]

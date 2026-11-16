@@ -1,0 +1,45 @@
+name: Build NØAD IPA (Free Apple ID Ready)
+
+on:
+  push:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  build-ipa:
+    runs-on: macos-15
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Install XcodeGen
+        run: brew install xcodegen
+
+      - name: Generate Xcode Project
+        run: xcodegen generate
+
+      - name: Build Unsigned Release App (NØAD)
+        run: |
+          xcodebuild clean build \
+            -project NOAD.xcodeproj \
+            -scheme NOAD \
+            -configuration Release \
+            -sdk iphoneos \
+            -derivedDataPath build \
+            CODE_SIGN_IDENTITY="" \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGNING_ALLOWED=NO
+
+      - name: Package into NØAD.ipa for AltStore / SideStore / Sideloadly
+        run: |
+          mkdir -p Payload
+          cp -R build/Build/Products/Release-iphoneos/NOAD.app Payload/
+          zip -r9 NOAD-unsigned.ipa Payload
+
+      - name: Upload NØAD-IPA Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: NOAD-IPA
+          path: |
+            NOAD-unsigned.ipa
+            *.mobileconfig

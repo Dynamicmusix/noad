@@ -1,0 +1,106 @@
+[
+ {
+  "trigger": {
+   "url-filter": "netflix\\.com"
+  },
+  "action": {
+   "type": "ignore-previous-rules"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "www\\.ups\\.com"
+  },
+  "action": {
+   "type": "ignore-previous-rules"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "wwwapps\\.ups\\.com"
+  },
+  "action": {
+   "type": "ignore-previous-rules"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "list-manage\\.com"
+  },
+  "action": {
+   "type": "ignore-previous-rules"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "analytics\\.twitter\\.com"
+  },
+  "action": {
+   "type": "ignore-previous-rules"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "www\\.googleadservices\\.com"
+  },
+  "action": {
+   "type": "ignore-previous-rules"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "go\\.redirectingat\\.com"
+  },
+  "action": {
+   "type": "ignore-previous-rules"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "mandrillapp\\.com"
+  },
+  "action": {
+   "type": "ignore-previous-rules"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "account\\.microsoft\\.com"
+  },
+  "action": {
+   "type": "ignore-previous-rules"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "auspost\\.com\\.au"
+  },
+  "action": {
+   "type": "ignore-previous-rules"
+  }
+ },
+ {
+  "trigger": {
+   "url-filter": "use\\.typekit\\.net"
+  },
+  "action": {
+   "type": "ignore-previous-rules"
+  }
+ },
+  {
+	"trigger" : {
+	  "url-filter" : "fedex\\.com"
+	},
+	"action" : {
+	  "type" : "ignore-previous-rules"
+	}
+  },
+  {
+	"trigger" : {
+	  "url-filter" : "bandcamp\\.com"
+	},
+	"action" : {
+	  "type" : "ignore-previous-rules"
+	}
+  }
+]

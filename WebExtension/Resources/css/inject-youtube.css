@@ -1,0 +1,47 @@
+/**
+ *
+ *  inject-youtube.css
+ *
+ *  NØAD
+ *  https://www.magiclasso.co/
+ *
+ *  Copyright © 2026 Magic Lasso Pty Ltd. All rights reserved.
+ *
+ */
+
+div.html5-video-player::after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	z-index: 10000;
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 0.5s 0.25s;
+}
+
+div.html5-video-player.ad-showing::after {
+	opacity: 1.0;
+	pointer-events: auto;
+	transition: opacity 0s;
+}
+
+div.ad-showing div.ytp-spinner {
+	display: block !important;
+	z-index: 10001 !important;
+}
+
+tp-yt-iron-overlay-backdrop {
+	display: none !important;
+}
+
+ytd-popup-container:has(ytd-enforcement-message-view-model) {
+	display: none !important;
+}
+
+ytm-popup-container:has(ytm-enforcement-message-view-model) {
+	display: none !important;
+}

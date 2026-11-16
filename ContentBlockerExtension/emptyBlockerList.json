@@ -1,0 +1,12 @@
+[
+  {
+    "trigger": {
+      "url-filter": "magiclasso\\.co"
+    },
+    "action": {
+      "type": "css-display-none",
+      "selector": "#magic-lasso-disabled"
+    }
+  }
+]
+
