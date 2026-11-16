@@ -15,6 +15,7 @@ targets:
           - "Resources/**"
           - "Info.plist"
       - path: Shared/AppConstants.swift
+      - path: Shared/ConnectProxyServer.swift
       - path: App/Resources/Rules
         buildPhase: resources
         type: group
@@ -23,8 +24,8 @@ targets:
       properties:
         CFBundleDisplayName: "NØAD"
         CFBundleName: "NØAD"
-        CFBundleShortVersionString: "1.1.0"
-        CFBundleVersion: "2"
+        CFBundleShortVersionString: "1.2.0"
+        CFBundleVersion: "3"
         UIBackgroundModes:
           - audio
           - fetch
@@ -34,7 +35,7 @@ targets:
         UISupportedInterfaceOrientations:
           - UIInterfaceOrientationPortrait
     entitlements:
-      path: Shared/NOAD.entitlements
+      path: Shared/NOAD-VPN.entitlements
     settings:
       base:
         PRODUCT_NAME: NOAD
@@ -42,12 +43,13 @@ targets:
         INFOPLIST_FILE: App/Info.plist
         GENERATE_INFOPLIST_FILE: NO
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
-        CODE_SIGN_ENTITLEMENTS: Shared/NOAD.entitlements
+        CODE_SIGN_ENTITLEMENTS: Shared/NOAD-VPN.entitlements
         SWIFT_VERSION: "5.9"
         TARGETED_DEVICE_FAMILY: "1,2"
     dependencies:
       - target: NOADContentBlocker
       - target: NOADWebExtension
+      - target: NOADPacketTunnel
 
   NOADContentBlocker:
     type: app-extension
@@ -115,5 +117,36 @@ targets:
         GENERATE_INFOPLIST_FILE: NO
         SKIP_INSTALL: YES
         CODE_SIGN_ENTITLEMENTS: Shared/NOAD.entitlements
+        SWIFT_VERSION: "5.9"
+        TARGETED_DEVICE_FAMILY: "1,2"
+
+  NOADPacketTunnel:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: PacketTunnelExtension/PacketTunnelProvider.swift
+      - path: Shared/AppConstants.swift
+      - path: Shared/ConnectProxyServer.swift
+      - path: App/Resources/Rules/core_block.txt
+        buildPhase: resources
+      - path: App/Resources/Rules/core_allow.txt
+        buildPhase: resources
+    info:
+      path: PacketTunnelExtension/Info.plist
+      properties:
+        CFBundleDisplayName: "NØAD Tunnel"
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.networkextension.packet-tunnel
+          NSExtensionPrincipalClass: "$(PRODUCT_MODULE_NAME).PacketTunnelProvider"
+    entitlements:
+      path: Shared/NOAD-VPN.entitlements
+    settings:
+      base:
+        PRODUCT_NAME: NOADPacketTunnel
+        PRODUCT_BUNDLE_IDENTIFIER: com.noad.app.PacketTunnel
+        INFOPLIST_FILE: PacketTunnelExtension/Info.plist
+        GENERATE_INFOPLIST_FILE: NO
+        SKIP_INSTALL: YES
+        CODE_SIGN_ENTITLEMENTS: Shared/NOAD-VPN.entitlements
         SWIFT_VERSION: "5.9"
         TARGETED_DEVICE_FAMILY: "1,2"

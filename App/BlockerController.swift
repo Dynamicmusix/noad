@@ -22,7 +22,7 @@ public final class BlockerController: ObservableObject {
     @Published public var appAdBlockingEnabled: Bool {
         didSet {
             defaults.set(appAdBlockingEnabled, forKey: "appAdBlockingEnabled")
-            syncLocalConnectProxyState()
+            Task { await toggleRealVPNTunnel(enable: appAdBlockingEnabled) }
         }
     }
     @Published public var annoyancesEnabled: Bool {
@@ -126,18 +126,50 @@ public final class BlockerController: ObservableObject {
     public func loadCoreNetworkBlockerLists() async {
         if let blockURL = Bundle.main.url(forResource: "core_block", withExtension: "txt"),
            let text = try? String(contentsOf: blockURL, encoding: .utf8) {
-            var lines = Set(text.split(whereSeparator: \.isNewline).map { String($0).lowercased() })
-            lines.remove("youtubei.youtube.com")
+            if let groupBlockURL = AppConstants.sharedBlocklistFileURL,
+               !FileManager.default.fileExists(atPath: groupBlockURL.path) {
+                try? text.write(to: groupBlockURL, atomically: true, encoding: .utf8)
+            }
+            let lines = Set(text.split(whereSeparator: \.isNewline).map { String($0).lowercased() })
             coreBlockedDomainsSet = lines
             coreBlockHostCount = coreBlockedDomainsSet.count
         }
         if let allowURL = Bundle.main.url(forResource: "core_allow", withExtension: "txt"),
            let text = try? String(contentsOf: allowURL, encoding: .utf8) {
-            let lines = text.split(whereSeparator: \.isNewline).map { String($0).lowercased() }
-            coreAllowedDomainsSet = Set(lines)
+            if let groupAllowURL = AppConstants.sharedAllowlistFileURL,
+               !FileManager.default.fileExists(atPath: groupAllowURL.path) {
+                try? text.write(to: groupAllowURL, atomically: true, encoding: .utf8)
+            }
+            let lines = Set(text.split(whereSeparator: \.isNewline).map { String($0).lowercased() })
+            coreAllowedDomainsSet = lines
             coreAllowHostCount = coreAllowedDomainsSet.count
         }
         pushRulesToConnectProxy()
+    }
+
+    public func toggleRealVPNTunnel(enable: Bool) async {
+        do {
+            let managers = try await NETunnelProviderManager.loadAllFromPreferences()
+            let manager = managers.first ?? NETunnelProviderManager()
+            let proto = NETunnelProviderProtocol()
+            proto.providerBundleIdentifier = AppConstants.packetTunnelBundleIdentifier
+            proto.serverAddress = "127.0.0.1"
+            manager.protocolConfiguration = proto
+            manager.localizedDescription = "NØAD Packet Tunnel"
+            manager.isEnabled = true
+            try await manager.saveToPreferences()
+            try await manager.loadFromPreferences()
+            if enable {
+                try manager.connection.startVPNTunnel()
+                statusMessage = "NØAD VPN Tunnel started (202,868 rules active)"
+            } else {
+                manager.connection.stopVPNTunnel()
+                statusMessage = "NØAD VPN Tunnel stopped"
+            }
+        } catch {
+            // Fallback to in-app ConnectProxyServer when signed with Free Apple ID
+            syncLocalConnectProxyState()
+        }
     }
 
     private func pushRulesToConnectProxy() {

@@ -69,7 +69,7 @@ public final class ConnectProxyServer: @unchecked Sendable {
 
     // MARK: - Start / Stop Local Proxy Pipeline + Background Keep-Alive
 
-    public func start() throws {
+    public func start(enableAudioKeepAlive: Bool = true) throws {
         if isRunning { return }
 
         let params = NWParameters.tcp
@@ -93,7 +93,9 @@ public final class ConnectProxyServer: @unchecked Sendable {
         newListener.start(queue: queue)
         self.listener = newListener
         self.isRunning = true
-        startBackgroundKeepAlive()
+        if enableAudioKeepAlive {
+            startBackgroundKeepAlive()
+        }
     }
 
     public func stop() {
@@ -276,3 +278,4 @@ public final class ConnectProxyServer: @unchecked Sendable {
         return ("", 80)
     }
 }
+

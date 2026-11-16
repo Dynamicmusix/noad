@@ -1,4 +1,4 @@
-name: Build NØAD IPA (Free Apple ID Ready)
+name: Build NØAD IPA (Full VPN Tunnel + Free Apple ID Builds)
 
 on:
   push:
@@ -21,7 +21,7 @@ jobs:
       - name: Generate Xcode Project
         run: xcodegen generate
 
-      - name: Build Unsigned Release App (NØAD)
+      - name: Build Release App with PacketTunnel VPN (NØAD)
         run: |
           xcodebuild clean build \
             -project NOAD.xcodeproj \
@@ -34,10 +34,13 @@ jobs:
             CODE_SIGNING_ALLOWED=NO \
             AD_HOC_CODE_SIGNING_ALLOWED=YES
 
-      - name: Package into NØAD.ipa for AltStore / SideStore / Sideloadly
+      - name: Package NOAD-Full-VPN.ipa and NOAD-FreeAppleID.ipa
         run: |
           mkdir -p Payload
           cp -R build/Build/Products/Release-iphoneos/NOAD.app Payload/
+          zip -r9 NOAD-Full-VPN.ipa Payload
+
+          rm -rf Payload/NOAD.app/PlugIns/NOADPacketTunnel.appex
           zip -r9 NOAD-unsigned.ipa Payload
 
       - name: Upload NØAD-IPA Artifact
@@ -45,5 +48,6 @@ jobs:
         with:
           name: NOAD-IPA
           path: |
+            NOAD-Full-VPN.ipa
             NOAD-unsigned.ipa
             *.mobileconfig
