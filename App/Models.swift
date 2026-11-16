@@ -15,6 +15,22 @@ public struct SafariContentRule: Codable, Identifiable {
         public var unlessDomain: [String]?
         public var urlFilterIsCaseSensitive: Bool?
 
+        public init(
+            urlFilter: String,
+            loadType: [String]? = nil,
+            resourceType: [String]? = nil,
+            ifDomain: [String]? = nil,
+            unlessDomain: [String]? = nil,
+            urlFilterIsCaseSensitive: Bool? = nil
+        ) {
+            self.urlFilter = urlFilter
+            self.loadType = loadType
+            self.resourceType = resourceType
+            self.ifDomain = ifDomain
+            self.unlessDomain = unlessDomain
+            self.urlFilterIsCaseSensitive = urlFilterIsCaseSensitive
+        }
+
         enum CodingKeys: String, CodingKey {
             case urlFilter = "url-filter"
             case loadType = "load-type"
@@ -28,6 +44,16 @@ public struct SafariContentRule: Codable, Identifiable {
     public struct Action: Codable {
         public var type: String
         public var selector: String?
+
+        public init(type: String, selector: String? = nil) {
+            self.type = type
+            self.selector = selector
+        }
+    }
+
+    public init(trigger: Trigger, action: Action) {
+        self.trigger = trigger
+        self.action = action
     }
 }
 
