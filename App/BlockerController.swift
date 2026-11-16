@@ -126,8 +126,9 @@ public final class BlockerController: ObservableObject {
     public func loadCoreNetworkBlockerLists() async {
         if let blockURL = Bundle.main.url(forResource: "core_block", withExtension: "txt"),
            let text = try? String(contentsOf: blockURL, encoding: .utf8) {
-            let lines = text.split(whereSeparator: \.isNewline).map { String($0).lowercased() }
-            coreBlockedDomainsSet = Set(lines)
+            var lines = Set(text.split(whereSeparator: \.isNewline).map { String($0).lowercased() })
+            lines.remove("youtubei.youtube.com")
+            coreBlockedDomainsSet = lines
             coreBlockHostCount = coreBlockedDomainsSet.count
         }
         if let allowURL = Bundle.main.url(forResource: "core_allow", withExtension: "txt"),

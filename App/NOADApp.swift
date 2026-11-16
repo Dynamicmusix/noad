@@ -70,13 +70,33 @@ struct ContentView: View {
                     .tint(.teal)
                 }
 
-                // Local ConnectProxyServer + NetworkBlockingHandler Pipeline Section
+                // Local ConnectProxyServer + Automatic PAC Sinkhole Section
                 Section {
+                    VStack(alignment: .leading, spacing: 6) {
+                        Text("Recommended (Never Disconnects in Background):")
+                            .font(.caption.weight(.semibold))
+                            .foregroundStyle(.teal)
+                        Text("Settings → Wi-Fi → (i) → Configure Proxy → Automatic")
+                            .font(.caption)
+                        HStack {
+                            Text("https://raw.githubusercontent.com/Dynamicmusix/noad/main/noad.pac")
+                                .font(.caption2.monospaced())
+                                .lineLimit(1)
+                            Spacer()
+                            Button("Copy PAC URL") {
+                                UIPasteboard.general.string = "https://raw.githubusercontent.com/Dynamicmusix/noad/main/noad.pac"
+                            }
+                            .buttonStyle(.borderedProminent)
+                            .tint(.teal)
+                        }
+                    }
+                    .padding(.vertical, 4)
+
                     HStack {
                         VStack(alignment: .leading, spacing: 2) {
                             Text("Local Proxy Server: 127.0.0.1")
                                 .font(.subheadline.weight(.medium))
-                            Text("Port: 9090 (202,868 core_block.txt rules active)")
+                            Text("Port: 9090 (202,867 core_block.txt rules active)")
                                 .font(.caption)
                                 .foregroundStyle(.secondary)
                         }
