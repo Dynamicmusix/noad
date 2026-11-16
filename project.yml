@@ -13,6 +13,7 @@ targets:
       - path: App
         excludes:
           - "Resources/**"
+          - "Info.plist"
       - path: Shared/AppConstants.swift
       - path: App/Resources/Rules
         buildPhase: resources
@@ -26,6 +27,7 @@ targets:
         PRODUCT_NAME: NOAD
         PRODUCT_BUNDLE_IDENTIFIER: com.noad.app
         INFOPLIST_FILE: App/Info.plist
+        GENERATE_INFOPLIST_FILE: NO
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
         CODE_SIGN_ENTITLEMENTS: Shared/NOAD.entitlements
         SWIFT_VERSION: "5.9"
@@ -51,6 +53,8 @@ targets:
         PRODUCT_NAME: NOADContentBlocker
         PRODUCT_BUNDLE_IDENTIFIER: com.noad.app.ContentBlocker
         INFOPLIST_FILE: ContentBlockerExtension/Info.plist
+        GENERATE_INFOPLIST_FILE: NO
+        SKIP_INSTALL: YES
         CODE_SIGN_ENTITLEMENTS: Shared/NOAD.entitlements
         SWIFT_VERSION: "5.9"
         TARGETED_DEVICE_FAMILY: "1,2"
@@ -61,7 +65,18 @@ targets:
     sources:
       - path: WebExtension/SafariWebExtensionHandler.swift
       - path: Shared/AppConstants.swift
-      - path: WebExtension/Resources
+      - path: WebExtension/Resources/manifest.json
+        buildPhase: resources
+      - path: WebExtension/Resources/_locales
+        buildPhase: resources
+        type: folder
+      - path: WebExtension/Resources/css
+        buildPhase: resources
+        type: folder
+      - path: WebExtension/Resources/images
+        buildPhase: resources
+        type: folder
+      - path: WebExtension/Resources/js
         buildPhase: resources
         type: folder
     info:
@@ -73,6 +88,8 @@ targets:
         PRODUCT_NAME: NOADWebExtension
         PRODUCT_BUNDLE_IDENTIFIER: com.noad.app.WebExtension
         INFOPLIST_FILE: WebExtension/Info.plist
+        GENERATE_INFOPLIST_FILE: NO
+        SKIP_INSTALL: YES
         CODE_SIGN_ENTITLEMENTS: Shared/NOAD.entitlements
         SWIFT_VERSION: "5.9"
         TARGETED_DEVICE_FAMILY: "1,2"
