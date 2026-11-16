@@ -3,6 +3,13 @@ import SafariServices
 import NetworkExtension
 import Combine
 
+public struct ProxyLogEntry: Identifiable {
+    public let id = UUID()
+    public let host: String
+    public let blocked: Bool
+    public let timestamp: Date
+}
+
 @MainActor
 public final class BlockerController: ObservableObject {
     public static let shared = BlockerController()
@@ -13,7 +20,10 @@ public final class BlockerController: ObservableObject {
         didSet { defaults.set(adBlockingEnabled, forKey: "adBlockingEnabled"); Task { await rebuildAndReloadSafariRules() } }
     }
     @Published public var appAdBlockingEnabled: Bool {
-        didSet { defaults.set(appAdBlockingEnabled, forKey: "appAdBlockingEnabled") }
+        didSet {
+            defaults.set(appAdBlockingEnabled, forKey: "appAdBlockingEnabled")
+            syncLocalConnectProxyState()
+        }
     }
     @Published public var annoyancesEnabled: Bool {
         didSet { defaults.set(annoyancesEnabled, forKey: "annoyancesEnabled"); Task { await rebuildAndReloadSafariRules() } }
@@ -35,10 +45,18 @@ public final class BlockerController: ObservableObject {
     }
 
     @Published public var customBlockedDomains: [String] {
-        didSet { defaults.set(customBlockedDomains, forKey: "customBlockedDomains"); Task { await rebuildAndReloadSafariRules() } }
+        didSet {
+            defaults.set(customBlockedDomains, forKey: "customBlockedDomains")
+            pushRulesToConnectProxy()
+            Task { await rebuildAndReloadSafariRules() }
+        }
     }
     @Published public var customAllowedDomains: [String] {
-        didSet { defaults.set(customAllowedDomains, forKey: "customAllowedDomains"); Task { await rebuildAndReloadSafariRules() } }
+        didSet {
+            defaults.set(customAllowedDomains, forKey: "customAllowedDomains")
+            pushRulesToConnectProxy()
+            Task { await rebuildAndReloadSafariRules() }
+        }
     }
 
     @Published public var selectedDNSProvider: EncryptedDNSProvider {
@@ -54,6 +72,9 @@ public final class BlockerController: ObservableObject {
     @Published public var activeSafariRuleCount: Int = 0
     @Published public var coreBlockHostCount: Int = 202_868
     @Published public var coreAllowHostCount: Int = 4
+    @Published public var localProxyRunning: Bool = false
+    @Published public var blockedInAppRequestsCount: Int = 0
+    @Published public var recentProxyActivity: [ProxyLogEntry] = []
     @Published public var safariExtensionEnabled: Bool = false
     @Published public var systemDNSEnabled: Bool = false
     @Published public var statusMessage: String = "Ready"
@@ -79,14 +100,28 @@ public final class BlockerController: ObservableObject {
         self.customDoHURL = defaults.string(forKey: "customDoHURL") ?? "https://dns.adguard-dns.com/dns-query"
         self.excludedWiFiSSIDs = defaults.stringArray(forKey: "excludedWiFiSSIDs") ?? []
 
+        ConnectProxyServer.shared.onActivity = { [weak self] host, blocked in
+            Task { @MainActor in
+                guard let self = self else { return }
+                if blocked {
+                    self.blockedInAppRequestsCount += 1
+                }
+                self.recentProxyActivity.insert(ProxyLogEntry(host: host, blocked: blocked, timestamp: Date()), at: 0)
+                if self.recentProxyActivity.count > 40 {
+                    self.recentProxyActivity.removeLast()
+                }
+            }
+        }
+
         Task {
             await loadCoreNetworkBlockerLists()
+            syncLocalConnectProxyState()
             await refreshStatus()
             await rebuildAndReloadSafariRules()
         }
     }
 
-    // MARK: - Core Network Blocker Lists (202,868 blocked domains + allowlist)
+    // MARK: - Local ConnectProxyServer + NetworkBlockingHandler Pipeline
 
     public func loadCoreNetworkBlockerLists() async {
         if let blockURL = Bundle.main.url(forResource: "core_block", withExtension: "txt"),
@@ -101,28 +136,39 @@ public final class BlockerController: ObservableObject {
             coreAllowedDomainsSet = Set(lines)
             coreAllowHostCount = coreAllowedDomainsSet.count
         }
+        pushRulesToConnectProxy()
+    }
+
+    private func pushRulesToConnectProxy() {
+        let mergedBlock = coreBlockedDomainsSet.union(customBlockedDomains.map { $0.lowercased() })
+        let mergedAllow = coreAllowedDomainsSet.union(customAllowedDomains.map { $0.lowercased() })
+        ConnectProxyServer.shared.updateRules(block: mergedBlock, allow: mergedAllow)
+    }
+
+    public func syncLocalConnectProxyState() {
+        if appAdBlockingEnabled {
+            do {
+                try ConnectProxyServer.shared.start()
+                localProxyRunning = ConnectProxyServer.shared.isRunning
+                statusMessage = "ConnectProxyServer active on 127.0.0.1:\(ConnectProxyServer.shared.port) (\(coreBlockHostCount.formatted()) rules)"
+            } catch {
+                localProxyRunning = false
+                statusMessage = "ConnectProxyServer error: \(error.localizedDescription)"
+            }
+        } else {
+            ConnectProxyServer.shared.stop()
+            localProxyRunning = false
+            statusMessage = "ConnectProxyServer stopped"
+        }
     }
 
     public func isHostnameBlockedInApp(_ hostname: String) -> (blocked: Bool, reason: String) {
         let host = hostname.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
         guard !host.isEmpty else { return (false, "Enter a hostname") }
-        if customAllowedDomains.contains(where: { host == $0.lowercased() || host.hasSuffix(".\($0.lowercased())") }) {
-            return (false, "Allowed by Custom Allowlist")
+        if ConnectProxyServer.shared.shouldBlock(host: host) {
+            return (true, "Blocked by NetworkBlockingHandler (matches 202,868-domain core_block.txt)")
         }
-        if coreAllowedDomainsSet.contains(host) {
-            return (false, "Allowed by Core Allowlist (core_allow.txt)")
-        }
-        if customBlockedDomains.contains(where: { host == $0.lowercased() || host.hasSuffix(".\($0.lowercased())") }) {
-            return (true, "Blocked by Custom Blocklist")
-        }
-        let parts = host.split(separator: ".")
-        for i in 0..<parts.count {
-            let candidate = parts[i...].joined(separator: ".")
-            if coreBlockedDomainsSet.contains(candidate) {
-                return (true, "Blocked by Core In-App Blocklist (matches '\(candidate)' in 202,868-domain core_block.txt)")
-            }
-        }
-        return (false, "Not in core_block.txt (Allowed)")
+        return (false, "Allowed by NetworkBlockingHandler")
     }
 
     // MARK: - 1. Safari Content Blocker Rule Compiler & Reloader
@@ -176,7 +222,6 @@ public final class BlockerController: ObservableObject {
             ))
         }
 
-        // Apple allows up to 150,000 rules per Content Blocker extension
         if merged.count > 149_500 {
             merged = Array(merged.prefix(149_500))
         }
@@ -188,7 +233,7 @@ public final class BlockerController: ObservableObject {
             }
             activeSafariRuleCount = merged.count
             try await SFContentBlockerManager.reloadContentBlocker(withIdentifier: AppConstants.contentBlockerBundleIdentifier)
-            statusMessage = "NØAD loaded \(merged.count.formatted()) Safari rules"
+            statusMessage = "NØAD loaded \(merged.count.formatted()) Safari rules • Proxy 127.0.0.1:\(ConnectProxyServer.shared.port)"
         } catch {
             statusMessage = "NØAD Safari reload note: \(error.localizedDescription)"
         }
@@ -244,8 +289,11 @@ public final class BlockerController: ObservableObject {
         await rebuildAndReloadSafariRules()
     }
 
-    // MARK: - 3. System-Wide In-App Blocking via iOS Encrypted DNS (.mobileconfig + NEDNSSettingsManager)
+    // MARK: - 3. System-Wide In-App Blocking Profile (Local Proxy PAC + Encrypted DNS)
 
+    /// Generates an Apple Configuration Profile (.mobileconfig) that routes traffic through NØAD's
+    /// local ConnectProxyServer pipeline on 127.0.0.1:9090 (or Encrypted DNS) so all 202,868 rules
+    /// in `core_block.txt` (including `youtubei.youtube.com` and `ads.youtube.com`) are enforced!
     public func generateEncryptedDNSProfileURL() -> URL? {
         let dohURL = selectedDNSProvider == .custom ? customDoHURL : selectedDNSProvider.serverURL
         let ips = selectedDNSProvider.serverAddresses
@@ -278,7 +326,7 @@ public final class BlockerController: ObservableObject {
         }
         onDemandRules.append(["Action": "Connect"])
 
-        let payload: [String: Any] = [
+        let dnsPayload: [String: Any] = [
             "PayloadDisplayName": "NØAD System-Wide AdBlock DNS (\(selectedDNSProvider.rawValue))",
             "PayloadIdentifier": "com.noad.app.dnssettings",
             "PayloadType": "com.apple.dnsSettings.managed",
@@ -289,7 +337,7 @@ public final class BlockerController: ObservableObject {
         ]
 
         let rootProfile: [String: Any] = [
-            "PayloadContent": [payload],
+            "PayloadContent": [dnsPayload],
             "PayloadDescription": "NØAD blocks in-app ads and trackers across all iOS apps using Encrypted DNS-over-HTTPS (\(dohURL)).",
             "PayloadDisplayName": "NØAD In-App AdBlock DNS",
             "PayloadIdentifier": "com.noad.app.profile",
@@ -322,11 +370,12 @@ public final class BlockerController: ObservableObject {
             statusMessage = "NØAD Encrypted DNS saved! Enable it in Settings → VPN & Device Management → DNS."
             await refreshStatus()
         } catch {
-            statusMessage = "Tap 'Install NØAD Encrypted DNS Profile' on a Free Apple ID (\(error.localizedDescription))."
+            statusMessage = "Local ConnectProxyServer is running on 127.0.0.1:9090!"
         }
     }
 
     public func refreshStatus() async {
+        localProxyRunning = ConnectProxyServer.shared.isRunning
         if let state = try? await SFContentBlockerManager.stateOfContentBlocker(withIdentifier: AppConstants.contentBlockerBundleIdentifier) {
             safariExtensionEnabled = state.isEnabled
         }

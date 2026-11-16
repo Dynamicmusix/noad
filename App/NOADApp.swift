@@ -1,4 +1,5 @@
 import SwiftUI
+import UIKit
 
 @main
 struct NOADApp: App {
@@ -35,9 +36,9 @@ struct ContentView: View {
                             .shadow(radius: 3)
 
                         VStack(alignment: .leading, spacing: 4) {
-                            Text(controller.adBlockingEnabled ? "NØAD Protection Active" : "NØAD Protection Paused")
+                            Text(controller.adBlockingEnabled || controller.appAdBlockingEnabled ? "NØAD Protection Active" : "NØAD Protection Paused")
                                 .font(.headline)
-                            Text("\(controller.activeSafariRuleCount.formatted()) Safari rules • \(controller.coreBlockHostCount.formatted()) In-App domains")
+                            Text("\(controller.activeSafariRuleCount.formatted()) Safari rules • \(controller.coreBlockHostCount.formatted()) In-App rules")
                                 .font(.caption)
                                 .foregroundStyle(.secondary)
                             Text(controller.statusMessage)
@@ -56,19 +57,81 @@ struct ContentView: View {
                     }
                     .tint(.teal)
 
-                    Toggle(isOn: Binding(
-                        get: { controller.appAdBlockingEnabled },
-                        set: { newValue in
-                            controller.appAdBlockingEnabled = newValue
-                            if newValue, let url = controller.generateEncryptedDNSProfileURL() {
-                                exportedProfileURL = url
-                                showShareSheet = true
-                            }
+                    Toggle(isOn: $controller.appAdBlockingEnabled) {
+                        VStack(alignment: .leading, spacing: 2) {
+                            Label("In-App Ad & Tracker Blocking (ConnectProxy)", systemImage: "network.badge.shield.half.filled")
+                            Text(controller.localProxyRunning
+                                 ? "ConnectProxyServer running on 127.0.0.1:9090 • \(controller.blockedInAppRequestsCount) blocked"
+                                 : "ConnectProxyServer stopped")
+                                .font(.caption2)
+                                .foregroundStyle(controller.localProxyRunning ? .green : .secondary)
                         }
-                    )) {
-                        Label("In-App Ad & Tracker Blocking", systemImage: "app.badge.checkmark.fill")
                     }
                     .tint(.teal)
+                }
+
+                // Local ConnectProxyServer + NetworkBlockingHandler Pipeline Section
+                Section {
+                    HStack {
+                        VStack(alignment: .leading, spacing: 2) {
+                            Text("Local Proxy Server: 127.0.0.1")
+                                .font(.subheadline.weight(.medium))
+                            Text("Port: 9090 (202,868 core_block.txt rules active)")
+                                .font(.caption)
+                                .foregroundStyle(.secondary)
+                        }
+                        Spacer()
+                        Button("Copy 127.0.0.1") {
+                            UIPasteboard.general.string = "127.0.0.1"
+                        }
+                        .buttonStyle(.bordered)
+                    }
+
+                    VStack(alignment: .leading, spacing: 6) {
+                        Text("Test Hostname Against NetworkBlockingHandler (core_block.txt):")
+                            .font(.caption)
+                            .foregroundStyle(.secondary)
+                        HStack {
+                            TextField("e.g. youtubei.youtube.com or ads.youtube.com", text: $testHostname)
+                                .textInputAutocapitalization(.never)
+                                .autocorrectionDisabled()
+                            Button("Test") {
+                                let res = controller.isHostnameBlockedInApp(testHostname)
+                                testResultMessage = (res.blocked ? "🛑 BLOCKED: " : "✅ ALLOWED: ") + res.reason
+                            }
+                            .buttonStyle(.bordered)
+                        }
+                        if let msg = testResultMessage {
+                            Text(msg)
+                                .font(.caption2)
+                                .foregroundStyle(msg.hasPrefix("🛑") ? .red : .green)
+                        }
+                    }
+
+                    if !controller.recentProxyActivity.isEmpty {
+                        VStack(alignment: .leading, spacing: 4) {
+                            Text("Live ConnectProxyServer Pipeline Activity:")
+                                .font(.caption.weight(.semibold))
+                            ForEach(controller.recentProxyActivity.prefix(8)) { entry in
+                                HStack {
+                                    Image(systemName: entry.blocked ? "xmark.octagon.fill" : "checkmark.circle.fill")
+                                        .foregroundStyle(entry.blocked ? .red : .green)
+                                        .font(.caption2)
+                                    Text(entry.host)
+                                        .font(.caption2.monospaced())
+                                        .lineLimit(1)
+                                    Spacer()
+                                    Text(entry.blocked ? "BLOCKED" : "ALLOWED")
+                                        .font(.system(size: 9, weight: .bold))
+                                        .foregroundStyle(entry.blocked ? .red : .secondary)
+                                }
+                            }
+                        }
+                    }
+                } header: {
+                    Text("Local ConnectProxyServer Pipeline (YouTube & All Apps)")
+                } footer: {
+                    Text("To route all iPhone app traffic (including the YouTube app) through NØAD's local 202,868-rule ConnectProxyServer pipeline on a Free Apple ID: go to Settings → Wi-Fi → tap (i) → Configure Proxy → Manual → Server: 127.0.0.1, Port: 9090 → Save.")
                 }
 
                 // Feature 1 & 2: Exact Magic Lasso Toggles
@@ -99,8 +162,8 @@ struct ContentView: View {
                     }
                 }
 
-                // Feature 3: System-Wide In-App Ad Blocking (Encrypted DNS + 202,868 Core Blocklist)
-                Section {
+                // Encrypted DNS Backup Option
+                Section("Optional: Encrypted DNS Profile (.mobileconfig)") {
                     Picker("Encrypted DNS Provider", selection: $controller.selectedDNSProvider) {
                         ForEach(EncryptedDNSProvider.allCases) { provider in
                             Text(provider.rawValue).tag(provider)
@@ -120,41 +183,8 @@ struct ContentView: View {
                             showShareSheet = true
                         }
                     } label: {
-                        Label("Install NØAD In-App Encrypted DNS Profile", systemImage: "network.badge.shield.half.filled")
-                            .fontWeight(.semibold)
+                        Label("Export NØAD Encrypted DNS Profile", systemImage: "arrow.up.doc")
                     }
-
-                    Button {
-                        Task { await controller.applyNativeNEDNSSettings() }
-                    } label: {
-                        Label("Apply via Native NEDNSSettingsManager", systemImage: "gearshape.2")
-                    }
-
-                    VStack(alignment: .leading, spacing: 6) {
-                        Text("Check Hostname Against Bundled 202,868 In-App Blocklist:")
-                            .font(.caption)
-                            .foregroundStyle(.secondary)
-                        HStack {
-                            TextField("e.g. doubleclick.net or ads.tiktok.com", text: $testHostname)
-                                .textInputAutocapitalization(.never)
-                                .autocorrectionDisabled()
-                            Button("Check") {
-                                let res = controller.isHostnameBlockedInApp(testHostname)
-                                testResultMessage = (res.blocked ? "🛑 BLOCKED: " : "✅ ALLOWED: ") + res.reason
-                            }
-                            .buttonStyle(.bordered)
-                        }
-                        if let msg = testResultMessage {
-                            Text(msg)
-                                .font(.caption2)
-                                .foregroundStyle(msg.hasPrefix("🛑") ? .red : .green)
-                        }
-                    }
-                    .padding(.vertical, 4)
-                } header: {
-                    Text("In-App Ad Blocking (Encrypted DNS + 202,868 Core Domains)")
-                } footer: {
-                    Text("Toggling 'In-App Ad & Tracker Blocking' or tapping 'Install NØAD In-App Encrypted DNS Profile' exports a signed-ready iOS Encrypted DNS (.mobileconfig) profile with your Custom Allowlist & Core Allowlist built in. Works on any Free Apple ID!")
                 }
 
                 // Custom Blocklist / Allowlist
@@ -182,7 +212,7 @@ struct ContentView: View {
                     .onDelete { idx in controller.customBlockedDomains.remove(atOffsets: idx) }
 
                     HStack {
-                        TextField("Allow domain (bypass Safari & DNS)", text: $newAllowedDomain)
+                        TextField("Allow domain (bypass Safari & Proxy)", text: $newAllowedDomain)
                             .textInputAutocapitalization(.never)
                             .autocorrectionDisabled()
                         Button("Allow") {
@@ -202,14 +232,6 @@ struct ContentView: View {
                         }
                     }
                     .onDelete { idx in controller.customAllowedDomains.remove(atOffsets: idx) }
-                }
-
-                // Setup Instructions
-                Section("One-Time iPhone Setup for NØAD") {
-                    Label("1. Settings → Apps → Safari → Extensions → Enable 'NØAD Block' & 'NØAD Web'", systemImage: "safari")
-                        .font(.footnote)
-                    Label("2. Install the NØAD Encrypted DNS Profile above, then enable it under Settings → General → VPN & Device Management → DNS", systemImage: "lock.shield")
-                        .font(.footnote)
                 }
             }
             .navigationTitle("NØAD")

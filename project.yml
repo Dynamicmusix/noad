@@ -20,6 +20,19 @@ targets:
         type: group
     info:
       path: App/Info.plist
+      properties:
+        CFBundleDisplayName: "NØAD"
+        CFBundleName: "NØAD"
+        CFBundleShortVersionString: "1.1.0"
+        CFBundleVersion: "2"
+        UIBackgroundModes:
+          - audio
+          - fetch
+        UILaunchScreen: {}
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: false
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
     entitlements:
       path: Shared/NOAD.entitlements
     settings:
@@ -46,6 +59,12 @@ targets:
         buildPhase: resources
     info:
       path: ContentBlockerExtension/Info.plist
+      properties:
+        CFBundleDisplayName: "NØAD Block"
+        NSHumanReadableDescription: "NØAD blocks ads, trackers, pop-ups and annoyances on web pages in Safari"
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.Safari.content-blocker
+          NSExtensionPrincipalClass: "$(PRODUCT_MODULE_NAME).ContentBlockerRequestHandler"
     entitlements:
       path: Shared/NOAD.entitlements
     settings:
@@ -81,6 +100,11 @@ targets:
         type: folder
     info:
       path: WebExtension/Info.plist
+      properties:
+        CFBundleDisplayName: "NØAD Web"
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.Safari.web-extension
+          NSExtensionPrincipalClass: "$(PRODUCT_MODULE_NAME).SafariWebExtensionHandler"
     entitlements:
       path: Shared/NOAD.entitlements
     settings:
